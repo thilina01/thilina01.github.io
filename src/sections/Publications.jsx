@@ -38,7 +38,7 @@ const publications = [
   },
   {
     title: "More on Medium",
-    date: "February 2017",
+    date: "",
     url: "https://medium.com/@thilina01"
   }
 ];
