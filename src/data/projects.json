@@ -1,0 +1,30 @@
+[
+  {
+    "title": "AI Review Pipeline",
+    "text": "Auto MR reviewer with OpenAI integration."
+  },
+  {
+    "title": "SMS Gateway",
+    "text": "Robust and secure SMS gateway solution with API support."
+  },
+  {
+    "title": "Production Monitoring & KPI",
+    "text": "End-to-end monitoring of production KPIs with integrated traceability for the manufacturing sector."
+  },
+  {
+    "title": "Microservice Status Monitor",
+    "text": "Mobile dashboard for tracking microservice health with real-time downtime alerts."
+  },
+  {
+    "title": "Node.js API Generator",
+    "text": "Generate a complete and standardized Node.js API based on your MySQL schema."
+  },
+  {
+    "title": "Document Workflow Monitor",
+    "text": "Monitor internal document flow and process status across departments."
+  },
+  {
+    "title": "Flashcard Learning App",
+    "text": "A colorful and engaging flashcard app to help kids learn through play."
+  }
+]

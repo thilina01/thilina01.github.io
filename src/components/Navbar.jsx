@@ -1,5 +1,6 @@
 import React from "react";
 import { Moon, Sun, Menu, X } from "lucide-react";
+import site from "../data/site.json";
 
 export default function Navbar({ darkMode, setDarkMode, menuOpen, setMenuOpen, activeSection }) {
   const sections = ["services", "projects", "publications", "contact"];
@@ -7,7 +8,7 @@ export default function Navbar({ darkMode, setDarkMode, menuOpen, setMenuOpen, a
   return (
     <>
       <nav className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm">
-        <h1 className="text-xl font-semibold">thilina01</h1>
+        <h1 className="text-xl font-semibold">{site.title}</h1>
         <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 rounded">
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
