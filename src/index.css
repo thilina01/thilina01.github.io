@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroll-offset {
+  scroll-margin-top: 5rem; /* adjust to navbar height */
+}
