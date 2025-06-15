@@ -8,17 +8,14 @@ export default function Navbar({ darkMode, setDarkMode, menuOpen, setMenuOpen, a
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleSectionClick = (section) => {
-    const target = `#${section}`;
+  const handleSectionClick = (sectionId) => {
     if (location.pathname === "/") {
-      const el = document.getElementById(section);
+      const el = document.getElementById(sectionId);
       if (el) {
         el.scrollIntoView({ behavior: "smooth" });
-      } else {
-        navigate(`/${target}`); // fallback
       }
     } else {
-      navigate(`/${target}`);
+      navigate("/", { state: { scrollTo: sectionId } });
     }
     setMenuOpen(false);
   };
@@ -26,7 +23,9 @@ export default function Navbar({ darkMode, setDarkMode, menuOpen, setMenuOpen, a
   return (
     <>
       <nav className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm">
-        <h1 className="text-xl font-semibold cursor-pointer" onClick={() => navigate("/")}>{site.title}</h1>
+        <h1 className="text-xl font-semibold cursor-pointer" onClick={() => navigate("/")}>
+          {site.title}
+        </h1>
         <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 rounded">
             {menuOpen ? <X size={24} /> : <Menu size={24} />}

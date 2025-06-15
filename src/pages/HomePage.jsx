@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Dropdown from "../components/Dropdown";
 import BackToTopButton from "../components/BackToTopButton";
@@ -16,6 +17,7 @@ export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("services");
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const location = useLocation();
 
   const sections = ["services", "projects", "techstack", "publications", "contact"];
 
@@ -42,8 +44,8 @@ export default function HomePage() {
         }
       },
       { 
-        threshold: 0.1, // 10% is enough to count as visible
-        rootMargin: "0px 0px -50% 0px" // triggers when top half is inside view
+        threshold: 0.1,
+        rootMargin: "0px 0px -50% 0px"
     }
     );
     sections.forEach(id => {
@@ -60,15 +62,15 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      const id = hash.replace("#", "");
+    if (location.state?.scrollTo) {
+      const el = document.getElementById(location.state.scrollTo);
+      if (el) {
       setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      }, 100); // delay to let DOM settle
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
     }
-  }, []);
+  }, [location.state]);
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-slate-100 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100">
