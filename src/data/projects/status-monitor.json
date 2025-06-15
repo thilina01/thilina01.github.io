@@ -73,5 +73,27 @@
     { "layer": "Notifications", "tech": "Flutter Local Notifications" },
     { "layer": "Background", "tech": "WorkManager (Android)" },
     { "layer": "Deployment", "tech": "GitHub Actions + Play Store" }
-  ]
+  ],
+
+  "architecture": [
+    "`main.dart`: Entry point, Provider setup",
+    "`api_service.dart`: Fetch & transform health data, manage alerts",
+    "`home_screen.dart`: Grid-based live dashboard with metrics",
+    "`settings_screen.dart`: User preferences and configuration",
+    "`background_service.dart`: Background polling and notifications",
+    "`theme_provider.dart`: Manages theme state across app"
+  ],
+  "cicd": [
+    "`flutter-github-release.yml`: Auto-tag & upload APK/AAB to GitHub",
+    "`flutter-release.yml`: Version bump + Play Store deployment",
+    "Secrets managed: Android keystore, Google Play service account JSON"
+  ],
+  "takeaways": [
+    "Built scalable service diffing logic to avoid UI redraws",
+    "Mastered Flutter background processing and native integrations",
+    "Automated release pipeline with GitHub Actions",
+    "Tuned UX for both mobile and desktop environments"
+  ],
+  "sourceAccess": "Currently private. Deployment builds and additional technical details are available on request.",
+  "developer": "Developed by thilina01 — 📧 thilina01@apache.org | 🌐 www.thilina01.com"
 }
