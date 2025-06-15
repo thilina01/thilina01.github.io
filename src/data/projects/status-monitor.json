@@ -1,6 +1,6 @@
 {
   "title": "📱 Status Monitor",
-  "description": "Real-time monitoring app for backend services — cross-platform, reactive UI, and background alerts.",
+  "description": " &nbsp; &nbsp; &nbsp; &nbsp; **Status Monitor** is a robust, cross-platform Flutter application designed for **real-time monitoring of backend services**. This application provides operations and DevOps teams with a clear, visual overview of system health — helping ensure uptime and detect failures **before they escalate**. <br /> The app intelligently displays service statuses, usage metrics (CPU, memory, network), and triggers notifications when services go down. With support for both **mobile and desktop platforms**, this project demonstrates modern, reactive UI practices and seamless background task management.",
 "images": [
   {
     "src": "/assets/status-monitor/google_play_dark.jpg",

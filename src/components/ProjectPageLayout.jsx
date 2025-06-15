@@ -2,12 +2,19 @@ import React from "react";
 import FeatureList from "./FeatureList";
 import TechStackTable from "./TechStackTable";
 import ImageCarousel from "./ImageCarousel";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 export default function ProjectPageLayout({ project }) {
   return (
     <main className="px-4 md:px-16 lg:px-32 py-10 max-w-screen-xl mx-auto">
       <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-      <p className="text-lg mb-8">{project.description}</p>
+        <div className="prose dark:prose-invert mb-8 max-w-none">
+        <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+            {project.description}
+        </ReactMarkdown>
+        </div>
+
 
       {project.images?.length > 0 && <ImageCarousel images={project.images} />}
       {project.download && (
