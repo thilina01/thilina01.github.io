@@ -7,6 +7,7 @@ import Services from "../sections/Services";
 import Projects from "../sections/Projects";
 import Publications from "../sections/Publications";
 import ContactSection from "../sections/ContactSection";
+import TechStack from "../sections/TechStack";
 
 export default function HomePage() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -16,15 +17,11 @@ export default function HomePage() {
   const [activeSection, setActiveSection] = useState("services");
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  const sections = ["services", "projects", "publications", "contact"];
+  const sections = ["services", "projects", "techstack", "publications", "contact"];
 
   useEffect(() => {
     const root = window.document.documentElement;
-    if (darkMode) {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
+    root.classList.toggle("dark", darkMode);
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
@@ -44,7 +41,10 @@ export default function HomePage() {
           }
         }
       },
-      { threshold: 0.5 }
+      { 
+        threshold: 0.1, // 10% is enough to count as visible
+        rootMargin: "0px 0px -50% 0px" // triggers when top half is inside view
+    }
     );
     sections.forEach(id => {
       const el = document.getElementById(id);
@@ -54,22 +54,14 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 300);
-    };
+    const handleScroll = () => setShowScrollTop(window.scrollY > 300);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-slate-100 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100">
-      <Navbar
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-        menuOpen={menuOpen}
-        setMenuOpen={setMenuOpen}
-        activeSection={activeSection}
-      />
+      <Navbar {...{ darkMode, setDarkMode, menuOpen, setMenuOpen, activeSection }} />
       {menuOpen && (
         <Dropdown
           sections={sections}
@@ -82,6 +74,7 @@ export default function HomePage() {
       <HeroSection />
       <Services />
       <Projects />
+      <TechStack />
       <Publications />
       <ContactSection />
       <BackToTopButton visible={showScrollTop} />

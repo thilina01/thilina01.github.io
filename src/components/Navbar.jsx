@@ -3,7 +3,7 @@ import { Moon, Sun, Menu, X } from "lucide-react";
 import site from "../data/site.json";
 
 export default function Navbar({ darkMode, setDarkMode, menuOpen, setMenuOpen, activeSection }) {
-  const sections = ["services", "projects", "publications", "contact"];
+  const sections = ["services", "projects", "techstack", "publications", "contact"];
 
   return (
     <>

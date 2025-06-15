@@ -1,0 +1,114 @@
+{
+  "Languages & Markup": [
+    { "name": "Java", "icon": "devicon-java-plain colored" },
+    { "name": "Python", "icon": "devicon-python-plain colored" },
+    { "name": "JavaScript", "icon": "devicon-javascript-plain colored" },
+    { "name": "TypeScript", "icon": "devicon-typescript-plain colored" },
+    { "name": "HTML", "icon": "devicon-html5-plain colored" },
+    { "name": "CSS", "icon": "devicon-css3-plain colored" },
+    { "name": "XML", "icon": "devicon-xml-plain" },
+    { "name": "JSON", "icon": "devicon-json-plain" }
+  ],
+  "AI & Machine Learning": [
+    { "name": "Hugging Face Transformers" },
+    { "name": "Sentence-Transformers" },
+    { "name": "spaCy" },
+    { "name": "scikit-learn", "icon": "devicon-scikitlearn-plain colored" },
+    { "name": "auto-sklearn" },
+    { "name": "DeepHyper" },
+    { "name": "Ray" },
+    { "name": "Rasa NLU & SDK" },
+    { "name": "OpenAI API" },
+    { "name": "DeepSeek R1" },
+    { "name": "LangChain" },
+    { "name": "Ollama" },
+    { "name": "NumPy", "icon": "devicon-numpy-original colored" },
+    { "name": "Pandas", "icon": "devicon-pandas-original colored" }
+  ],
+  "Frameworks & Libraries": [
+    { "name": "Spring Boot", "icon": "devicon-spring-plain colored" },
+    { "name": "Angular", "icon": "devicon-angularjs-plain colored" },
+    { "name": "FastAPI" },
+    { "name": "Node.js", "icon": "devicon-nodejs-plain colored" },
+    { "name": "NanoHTTPD" },
+    { "name": "Matplotlib" },
+    { "name": "Plotly" },
+    { "name": "Flutter", "icon": "devicon-flutter-plain colored" }
+  ],
+  "Mobile & Desktop Development": [
+    { "name": "Android SDK", "icon": "devicon-android-plain colored" },
+    { "name": "Flutter", "icon": "devicon-flutter-plain colored" },
+    { "name": "NetBeans", "icon": "devicon-netbeans-plain colored" }
+  ],
+  "Databases & Data Stores": [
+    { "name": "MySQL", "icon": "devicon-mysql-plain colored" },
+    { "name": "PostgreSQL", "icon": "devicon-postgresql-plain colored" },
+    { "name": "DB2" },
+    { "name": "H2" },
+    { "name": "MongoDB", "icon": "devicon-mongodb-plain colored" },
+    { "name": "SQLite", "icon": "devicon-sqlite-plain colored" }
+  ],
+  "DevOps & CI/CD": [
+    { "name": "Jenkins", "icon": "devicon-jenkins-plain colored" },
+    { "name": "GitHub Actions", "icon": "devicon-github-plain colored" },
+    { "name": "GitLab CI", "icon": "devicon-gitlab-plain colored" },
+    { "name": "Maven", "icon": "devicon-apache-plain colored" },
+    { "name": "Ant" },
+    { "name": "npm", "icon": "devicon-npm-original-wordmark colored" },
+    { "name": "Terraform", "icon": "devicon-terraform-plain colored" },
+    { "name": "Ansible", "icon": "devicon-ansible-plain colored" },
+    { "name": "CloudFormation" },
+    { "name": "Eureka (Spring Cloud)" }
+  ],
+  "Containerization & Virtualization": [
+    { "name": "Docker", "icon": "devicon-docker-plain colored" },
+    { "name": "Kubernetes", "icon": "devicon-kubernetes-plain colored" },
+    { "name": "podman", "icon": "devicon-podman-plain colored" },
+    { "name": "VirtualBox", "icon": "devicon-virtualbox-plain colored" }
+  ],
+  "Version Control": [
+    { "name": "Git (GitHub & GitLab)", "icon": "devicon-git-plain colored" },
+    { "name": "SVN" }
+  ],
+  "Testing & Quality": [
+    { "name": "JUnit", "icon": "devicon-junit-plain colored" },
+    { "name": "Mockito" },
+    { "name": "AssertJ" },
+    { "name": "Hamcrest" },
+    { "name": "SonarQube", "icon": "devicon-sonarqube-plain colored" },
+    { "name": "ESLint", "icon": "devicon-eslint-plain colored" }
+  ],
+  "Logging & Monitoring": [
+    { "name": "ELK Stack" },
+    { "name": "Beats" },
+    { "name": "ElastAlert" },
+    { "name": "Prometheus" },
+    { "name": "Grafana", "icon": "devicon-grafana-plain colored" },
+    { "name": "Portainer" }
+  ],
+  "Messaging & Streaming": [
+    { "name": "ActiveMQ" },
+    { "name": "RabbitMQ", "icon": "devicon-rabbitmq-plain colored" },
+    { "name": "Kafka", "icon": "devicon-apachekafka-original colored" }
+  ],
+  "APIs & Communication Protocols": [
+    { "name": "RESTful APIs" },
+    { "name": "gRPC" },
+    { "name": "WebSockets" }
+  ],
+  "Security & Authentication": [
+    { "name": "OAuth2", "icon": "devicon-oauth-plain colored" },
+    { "name": "JWT" },
+    { "name": "SSL/TLS" }
+  ],
+  "Cloud & Infrastructure": [
+    { "name": "AWS", "icon": "devicon-amazonwebservices-plain colored" },
+    { "name": "GCP", "icon": "devicon-googlecloud-plain colored" },
+    { "name": "Local & Hybrid" }
+  ],
+  "Servers & Proxies": [
+    { "name": "Apache Tomcat", "icon": "devicon-tomcat-line colored" },
+    { "name": "NGINX", "icon": "devicon-nginx-original colored" },
+    { "name": "Traefik", "icon": "devicon-traefikproxy-original colored" }
+  ]
+}
