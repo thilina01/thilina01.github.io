@@ -12,8 +12,9 @@
     "text": "End-to-end monitoring of production KPIs with integrated traceability for the manufacturing sector."
   },
   {
-    "title": "Microservice Status Monitor",
-    "text": "Mobile dashboard for tracking microservice health with real-time downtime alerts."
+  "title": "Microservice Status Monitor",
+  "text": "Mobile dashboard for tracking microservice health with real-time downtime alerts.",
+  "link": "/status-monitor"
   },
   {
     "title": "Node.js API Generator",

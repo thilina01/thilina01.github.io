@@ -8,7 +8,9 @@ export default function Projects() {
       <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
       <div className="grid gap-8 md:grid-cols-2">
         {projects.map((project, index) => (
-          <Card key={index} title={project.title} text={project.text} />
+          <a href={project.link || "#"} key={index}>
+            <Card title={project.title} text={project.text} />
+          </a>
         ))}
       </div>
     </section>
