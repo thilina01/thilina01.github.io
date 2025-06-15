@@ -1,18 +1,49 @@
 {
   "title": "📱 Status Monitor",
   "description": "Real-time monitoring app for backend services — cross-platform, reactive UI, and background alerts.",
-  "images": [
-    {
-      "src": "assets/screenshots/dashboard_light.png",
-      "alt": "Dashboard View",
-      "caption": "Service status overview in light mode"
-    },
-    {
-      "src": "assets/screenshots/settings_dark.png",
-      "alt": "Settings Panel",
-      "caption": "Settings screen with dark mode enabled"
-    }
-  ],
+"images": [
+  {
+    "src": "/assets/status-monitor/google_play_dark.jpg",
+    "alt": "Google Play - Dark Mode",
+    "caption": "Download page for Status Monitor in dark mode"
+  },
+  {
+    "src": "/assets/status-monitor/installation_success_dark.jpg",
+    "alt": "Installation Success - Dark Mode",
+    "caption": "Confirmation screen after successful installation"
+  },
+  {
+    "src": "/assets/status-monitor/service_alert_dark.jpg",
+    "alt": "Service Alert - Dark Mode",
+    "caption": "Alert notification for service status change"
+  },
+  {
+    "src": "/assets/status-monitor/service_list_down_light.jpg",
+    "alt": "Service List (Down) - Light Mode",
+    "caption": "Service dashboard showing down services (light mode)"
+  },
+  {
+    "src": "/assets/status-monitor/service_list_up_light.jpg",
+    "alt": "Service List (Up) - Light Mode",
+    "caption": "Service dashboard showing healthy services (light mode)"
+  },
+  {
+    "src": "/assets/status-monitor/service_list_down_dark.jpg",
+    "alt": "Service List (Down) - Dark Mode",
+    "caption": "Service dashboard showing down services (dark mode)"
+  },
+  {
+    "src": "/assets/status-monitor/service_list_up_dark.jpg",
+    "alt": "Service List (Up) - Dark Mode",
+    "caption": "Service dashboard showing healthy services (dark mode)"
+  },
+  {
+    "src": "/assets/status-monitor/settings_light.jpg",
+    "alt": "Settings - Light Mode",
+    "caption": "User preferences and refresh interval settings"
+  }
+]
+,
   "download": {
     "label": "Download Now",
     "url": "https://play.google.com/store/apps/details?id=com.slconsultech.statusmonitorapp"

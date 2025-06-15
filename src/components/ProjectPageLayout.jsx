@@ -1,6 +1,8 @@
 import React from "react";
 import FeatureList from "./FeatureList";
 import TechStackTable from "./TechStackTable";
+import ImageCarousel from "./ImageCarousel";
+
 
 export default function ProjectPageLayout({ project }) {
   return (
@@ -8,13 +10,14 @@ export default function ProjectPageLayout({ project }) {
       <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
       <p className="text-lg mb-8">{project.description}</p>
 
-      {project.images?.map((img, idx) => (
+      {/* {project.images?.map((img, idx) => (
         <div key={idx} className="mb-6">
           <img src={img.src} alt={img.alt} className="rounded-lg shadow-md" />
           <p className="text-sm text-slate-500 mt-1">{img.caption}</p>
         </div>
-      ))}
-
+      ))} */}
+      {project.images?.length > 0 && <ImageCarousel images={project.images} />}
+      
       {project.download && (
         <div className="my-6">
           <a href={project.download.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline text-lg">
