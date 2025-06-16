@@ -1,4 +1,5 @@
 import React from "react";
+import { ExternalLink } from "lucide-react";
 
 export default function Card({ title, text, isLinked = false }) {
   return (
@@ -9,15 +10,14 @@ export default function Card({ title, text, isLinked = false }) {
           : "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700"
       }`}
     >
-      <h2 className="text-xl font-semibold mb-2 flex items-center">
-        {title}
+      <h2 className="text-xl font-semibold mb-2 flex items-center justify-between">
+        <span>{title}</span>
         {isLinked && (
-          <span
-            className="ml-2 text-blue-500 text-sm"
+          <ExternalLink
+            size={18}
+            className="text-slate-400 shrink-0"
             title="Has dedicated project page"
-          >
-            ↗
-          </span>
+          />
         )}
       </h2>
       <p>{text}</p>
