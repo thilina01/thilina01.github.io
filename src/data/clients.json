@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Infor Nexus Services (Pvt) Ltd",
+    "logo": "/assets/clients/infor.png"
+  },
+  {
+    "name": "CodeGen International (Pvt) Ltd",
+    "logo": "/assets/clients/codegen.png"
+  },
+  {
+    "name": "OTR International, Inc. USA",
+    "logo": "/assets/clients/otr.png"
+  },
+  {
+    "name": "CMS (Pvt) Ltd",
+    "logo": "/assets/clients/cms.png"
+  },
+  {
+    "name": "speos - bpost group, Belgium",
+    "logo": "/assets/clients/speos.png"
+  },
+  {
+    "name": "Scicom (MSC) Bhd, Malaysia",
+    "logo": "/assets/clients/scicom.png"
+  },
+  {
+    "name": "Nano Creations (Pvt) Ltd",
+    "logo": "/assets/clients/nano.png"
+  },
+  {
+    "name": "Inova Engineering (Pvt) Ltd",
+    "logo": "/assets/clients/inova.png"
+  }
+]

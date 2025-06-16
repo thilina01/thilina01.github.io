@@ -9,6 +9,7 @@ import Projects from "../sections/Projects";
 import Publications from "../sections/Publications";
 import ContactSection from "../sections/ContactSection";
 import TechStack from "../sections/TechStack";
+import ClientCarousel from "../components/ClientCarousel";
 
 export default function HomePage() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -19,7 +20,13 @@ export default function HomePage() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const location = useLocation();
 
-  const sections = ["services", "projects", "techstack", "publications", "contact"];
+  const sections = [
+    "services",
+    "projects",
+    "techstack",
+    "publications",
+    "contact",
+  ];
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -36,19 +43,19 @@ export default function HomePage() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      entries => {
+      (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
         }
       },
-      { 
+      {
         threshold: 0.1,
-        rootMargin: "0px 0px -50% 0px"
-    }
+        rootMargin: "0px 0px -50% 0px",
+      }
     );
-    sections.forEach(id => {
+    sections.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
@@ -65,7 +72,7 @@ export default function HomePage() {
     if (location.state?.scrollTo) {
       const el = document.getElementById(location.state.scrollTo);
       if (el) {
-      setTimeout(() => {
+        setTimeout(() => {
           el.scrollIntoView({ behavior: "smooth" });
         }, 100);
       }
@@ -74,7 +81,9 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-slate-100 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100">
-      <Navbar {...{ darkMode, setDarkMode, menuOpen, setMenuOpen, activeSection }} />
+      <Navbar
+        {...{ darkMode, setDarkMode, menuOpen, setMenuOpen, activeSection }}
+      />
       {menuOpen && (
         <Dropdown
           sections={sections}
@@ -88,6 +97,7 @@ export default function HomePage() {
       <Services />
       <Projects />
       <TechStack />
+      <ClientCarousel />
       <Publications />
       <ContactSection />
       <BackToTopButton visible={showScrollTop} />
