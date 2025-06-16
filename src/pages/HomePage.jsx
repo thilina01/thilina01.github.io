@@ -7,9 +7,9 @@ import HeroSection from "../sections/HeroSection";
 import Services from "../sections/Services";
 import Projects from "../sections/Projects";
 import Publications from "../sections/Publications";
-import ContactSection from "../sections/ContactSection";
 import TechStack from "../sections/TechStack";
 import ClientCarousel from "../components/ClientCarousel";
+import Footer from "../components/Footer";
 
 export default function HomePage() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -99,7 +99,7 @@ export default function HomePage() {
       <TechStack />
       <ClientCarousel />
       <Publications />
-      <ContactSection />
+      <Footer />
       <BackToTopButton visible={showScrollTop} />
     </main>
   );
