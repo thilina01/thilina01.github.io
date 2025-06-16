@@ -4,7 +4,7 @@ import site from "../data/site.json";
 
 export default function Footer() {
   return (
-<footer className="mt-12 bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 px-4 md:px-16 lg:px-32 py-10 border-t border-slate-200 dark:border-slate-700">
+<footer id="footer" className="mt-12 bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 px-4 md:px-16 lg:px-32 py-10 border-t border-slate-200 dark:border-slate-700">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
         {/* Branding */}

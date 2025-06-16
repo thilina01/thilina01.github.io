@@ -4,7 +4,7 @@ import site from "../data/site.json";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Navbar({ darkMode, setDarkMode, menuOpen, setMenuOpen, activeSection }) {
-  const sections = ["services", "projects", "techstack", "publications", "contact"];
+  const sections = ["services", "projects", "techstack", "publications", "footer"];
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -38,7 +38,7 @@ export default function Navbar({ darkMode, setDarkMode, menuOpen, setMenuOpen, a
               onClick={() => handleSectionClick(section)}
               className={`${activeSection === section ? 'text-blue-500 font-semibold' : 'hover:underline'}`}
             >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+              {section === "footer" ? "Contact" : section.charAt(0).toUpperCase() + section.slice(1)}
             </button>
           ))}
           <button
@@ -59,7 +59,7 @@ export default function Navbar({ darkMode, setDarkMode, menuOpen, setMenuOpen, a
               onClick={() => handleSectionClick(section)}
               className={`${activeSection === section ? 'text-blue-500 font-semibold' : 'hover:underline'}`}
             >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+              {section === "footer" ? "Contact" : section.charAt(0).toUpperCase() + section.slice(1)}
             </button>
           ))}
           <button
