@@ -41,6 +41,17 @@ export default function Navbar({ darkMode, setDarkMode, menuOpen, setMenuOpen, a
               {section === "footer" ? "Contact" : section.charAt(0).toUpperCase() + section.slice(1)}
             </button>
           ))}
+          
+          {/* HIRE ME CTA */}
+          <a
+            href="https://drive.google.com/file/d/1Iti2Vx1BUcz67lIdQCLvz5449MkyOJLC/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-500 hover:bg-blue-600 text-blue-200 font-semibold py-2 px-4 rounded-full shadow-md transition animate-pulse"
+          >
+            Hire Me
+          </a>
+
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="bg-slate-200 dark:bg-slate-700 p-2 rounded-full shadow-md hover:shadow-lg transition"
@@ -62,6 +73,17 @@ export default function Navbar({ darkMode, setDarkMode, menuOpen, setMenuOpen, a
               {section === "footer" ? "Contact" : section.charAt(0).toUpperCase() + section.slice(1)}
             </button>
           ))}
+
+          {/* HIRE ME CTA (Mobile Menu) */}
+          <a
+            href="https://drive.google.com/file/d/1Iti2Vx1BUcz67lIdQCLvz5449MkyOJLC/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-500 hover:bg-blue-600 text-blue-200 font-semibold py-2 px-4 rounded-full shadow-md transition animate-pulse w-fit"
+          >
+            Hire Me
+          </a>
+
           <button
             onClick={() => {
               setDarkMode(!darkMode);
