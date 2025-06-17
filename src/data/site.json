@@ -1,12 +1,30 @@
 {
   "title": "thilina01",
-  "copyright": "thilina01. All rights reserved.",
+  "author": "Thilina Ranathunga",
+  "jobTitle": "AI Software Architect",
+  "description": "AI Software Architect | DevOps Automation | Microservices Expert | Cloud-Native Systems | Open Source Contributor",
+  "ogDescription": "Building AI, DevOps, and scalable cloud-native systems. Explore projects, articles, and open-source work.",
+  "twitterDescription": "Explore projects in AI, automation, microservices & DevOps tooling.",
   "domain": "www.thilina01.com",
+  "previewImage": "/assets/preview.png",
   "email": "thilina01@apache.org",
   "phone": "+94 72 466 6666",
   "address": "Colombo, Sri Lanka",
+  "organization": "SLConsulTech",
+  "favicon": "/favicon.png",
   "social": {
     "github": "https://github.com/thilina01",
     "linkedin": "https://linkedin.com/in/thilina01"
-  }
+  },
+  "twitter": {
+    "site": "@thilina01",
+    "creator": "@thilina01"
+  },
+  "analytics": {
+    "goatcounter": "https://thilina01.goatcounter.com/count"
+  },
+  "structuredData": true,
+  "deviconCSS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css",
+  "canonical": true,
+  "copyright": "thilina01. All rights reserved."
 }

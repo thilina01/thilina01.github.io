@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import ContactSection from "../sections/ContactSection";
 import ProjectPageLayout from "../components/ProjectPageLayout";
 import data from "../data/projects/status-monitor.json";
+import MetaTags from "../components/MetaTags";
 
 export default function ProjectStatusMonitor() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -17,6 +18,7 @@ export default function ProjectStatusMonitor() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-slate-100 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100">
+      <MetaTags />
       <Navbar
         darkMode={darkMode}
         setDarkMode={setDarkMode}
