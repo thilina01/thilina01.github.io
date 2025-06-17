@@ -4,8 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>Loading...</title>
+    <title><%= title %></title>
 
+    <!-- SEO Meta -->
+    <meta name="description" content="<%= description %>" />
+    <meta name="author" content="<%= author %>" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="<%= ogTitle %>" />
+    <meta property="og:description" content="<%= ogDescription %>" />
+    <meta property="og:image" content="<%= ogImage %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= ogUrl %>" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%= twitterTitle %>" />
+    <meta name="twitter:description" content="<%= twitterDescription %>" />
+    <meta name="twitter:image" content="<%= twitterImage %>" />
+    <meta name="twitter:site" content="<%= twitterSite %>" />
+    <meta name="twitter:creator" content="<%= twitterCreator %>" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="<%= canonical %>" />
+
+    <!-- GoatCounter Analytics -->
+    <% if (goatcounterScript) { %>
+      <script data-goatcounter="<%= goatcounterScript %>" async src="//gc.zgo.at/count.js"></script>
+    <% } %>
+
+    <!-- Favicon and DevIcons -->
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link
       rel="stylesheet"
