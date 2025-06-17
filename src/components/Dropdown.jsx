@@ -1,19 +1,38 @@
 import React from "react";
 import { Moon, Sun } from "lucide-react";
 
-export default function Dropdown({ sections, activeSection, setMenuOpen, darkMode, setDarkMode }) {
+export default function Dropdown({
+  sections,
+  activeSection,
+  setMenuOpen,
+  darkMode,
+  setDarkMode,
+}) {
   return (
     <div className="md:hidden fixed top-16 left-0 w-full z-40 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-md flex flex-col gap-4 px-6 py-4">
-      {sections.map(section => (
+      {sections.map((section) => (
         <a
           key={section}
           href={`#${section}`}
           onClick={() => setMenuOpen(false)}
-          className={`${activeSection === section ? 'text-blue-500 font-semibold' : 'hover:underline'}`}
+          className={`${
+            activeSection === section
+              ? "text-blue-500 font-semibold"
+              : "hover:underline"
+          }`}
         >
           {section.charAt(0).toUpperCase() + section.slice(1)}
         </a>
       ))}
+      <a
+        href="https://drive.google.com/file/d/1Iti2Vx1BUcz67lIdQCLvz5449MkyOJLC/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-500 hover:bg-blue-600 text-blue-200 font-semibold py-2 px-4 rounded-full shadow-md transition animate-pulse w-fit"
+      >
+        Hire Me
+      </a>
+
       <button
         onClick={() => {
           setDarkMode(!darkMode);
