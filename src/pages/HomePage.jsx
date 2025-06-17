@@ -10,7 +10,6 @@ import Publications from "../sections/Publications";
 import TechStack from "../sections/TechStack";
 import ClientCarousel from "../components/ClientCarousel";
 import Footer from "../components/Footer";
-import MetaTags from "../components/MetaTags";
 
 export default function HomePage() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -82,7 +81,6 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-slate-100 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100">
-      <MetaTags /> {/* ← inject dynamic SEO */}
       <Navbar
         {...{ darkMode, setDarkMode, menuOpen, setMenuOpen, activeSection }}
       />
