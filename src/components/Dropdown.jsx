@@ -25,7 +25,7 @@ export default function Dropdown({
         </a>
       ))}
       <a
-        href="https://drive.google.com/file/d/1Iti2Vx1BUcz67lIdQCLvz5449MkyOJLC/view?usp=sharing"
+        href="https://drive.google.com/uc?export=download&id=1Iti2Vx1BUcz67lIdQCLvz5449MkyOJLC"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-blue-500 hover:bg-blue-600 text-blue-200 font-semibold py-2 px-4 rounded-full shadow-md transition animate-pulse w-fit"
