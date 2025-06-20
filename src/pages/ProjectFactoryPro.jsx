@@ -47,7 +47,7 @@ export default function ProjectFactoryPro() {
       {/* Features Grid */}
       <section className="py-16 px-6">
         <h2 className="text-3xl font-bold text-center mb-12">
-          What Sets FactoryPro 360™ Apart
+          What Sets FactoryPro 360 Apart
         </h2>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
           {data.features.map((feat, i) => (
