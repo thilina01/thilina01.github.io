@@ -1,0 +1,78 @@
+{
+  "title": "🏭 FactoryPro 360 Operations Command Suite",
+  "subtitle": "Built for manufacturers who refuse to leave performance to chance.",
+  "hero": {
+    "heading": "Transform Production into Performance",
+    "text": "FactoryPro 360 unifies planning, production, quality, logistics and finance into one intuitive command center. Instantly see what's running, what's waiting, and what's costing you money.",
+    "ctaText": "Schedule Your Demo",
+    "ctaLink": "https://www.factorypro360.com/demo"
+  },
+  "features": [
+    {
+      "icon": "⚡",
+      "title": "Real-Time Production Pulse",
+      "text": "Live dashboards surface quantities, scrap and schedule variance so supervisors can act now."
+    },
+    {
+      "icon": "🔧",
+      "title": "Intelligent Tool & Asset Care",
+      "text": "Track MTBF, MTTR and downtime automatically, keeping machines healthy and OEE high."
+    },
+    {
+      "icon": "🚚",
+      "title": "Seamless Internal Logistics",
+      "text": "Digital transfer notes trace every pallet and carton, eliminating search time and WIP surprises."
+    },
+    {
+      "icon": "💰",
+      "title": "Finance & Floor in Lockstep",
+      "text": "Debit, credit and invoice workflows flow straight from production events—month-end closes faster."
+    },
+    {
+      "icon": "👀",
+      "title": "Role-Based Visibility",
+      "text": "Operators, planners and accountants each see exactly what they need—nothing more."
+    },
+    {
+      "icon": "📊",
+      "title": "Action-Ready Analytics",
+      "text": "Pre-built scrap trends, labour utilization and daily summaries turn data into insight."
+    }
+  ],
+  "outcomes": [
+    { "goal": "Shrink Lead-Times", "impact": "Up to 20% faster order-to-ship" },
+    { "goal": "Lift OEE", "impact": "+8 pp average equipment effectiveness" },
+    { "goal": "Reduce Working Capital", "impact": "12% lower WIP buffers" },
+    {
+      "goal": "Cut Investigation Time",
+      "impact": "-35% faster root-cause analysis"
+    }
+  ],
+  "modules": [
+    "Production & Schedule Management",
+    "Tool & Maintenance Tracker",
+    "Workforce & Shift Planner",
+    "Packaging & Transfer Notes",
+    "Debit / Credit Note Manager",
+    "Executive Dashboards"
+  ],
+  "testimonials": [
+    {
+      "quote": "We recovered the cost of FactoryPro 360 before the second month closed. Downtime meetings are now data-driven—and shorter.",
+      "author": "Plant Director, Global Wheel Manufacturer"
+    },
+    {
+      "quote": "Finance finally trusts the production numbers. Month-end reconciliation fell from five days to less than one.",
+      "author": "Group CFO, Heavy-Equipment Supplier"
+    }
+  ],
+  "techSnapshot": {
+    "Architecture": "Modular Spring Boot micro-services with RESTful APIs",
+    "Frontend": "Responsive Angular SPA—ideal for tablets & shop-floor kiosks",
+    "Database": "MySQL or PostgreSQL with full audit trails on every entity",
+    "Deployment": "Docker & Compose for single-plant installs; Kubernetes-ready for multi-site roll-outs",
+    "Security": "Role-Based Access Control, encrypted passwords, JWT tokens",
+    "Integration": "Clean REST endpoints, CSV import/export and ERP code mapping",
+    "Extensibility": "Container orchestration enables zero-downtime additions"
+  }
+}

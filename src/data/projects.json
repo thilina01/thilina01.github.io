@@ -1,5 +1,15 @@
 [
   {
+    "title": "Microservice Status Monitor",
+    "text": "Mobile dashboard for tracking microservice health with real-time downtime alerts.",
+    "link": "/status-monitor"
+  },
+  {
+    "title": "FactoryPro 360 - Operations Command Suite",
+    "text": "Built for manufacturers who refuse to leave performance to chance.",
+    "link": "/factorypro"
+  },
+  {
     "title": "AI Review Pipeline",
     "text": "Auto MR reviewer with OpenAI integration."
   },
@@ -10,11 +20,6 @@
   {
     "title": "Production Monitoring & KPI",
     "text": "End-to-end monitoring of production KPIs with integrated traceability for the manufacturing sector."
-  },
-  {
-  "title": "Microservice Status Monitor",
-  "text": "Mobile dashboard for tracking microservice health with real-time downtime alerts.",
-  "link": "/status-monitor"
   },
   {
     "title": "Node.js API Generator",
