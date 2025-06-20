@@ -8,7 +8,18 @@
   "domain": "www.thilina01.com",
   "previewImage": "/assets/preview.jpg",
   "email": "thilina01@apache.org",
-  "phone": "+94 72 466 6666",
+  "phones": [
+    {
+      "label": "LK",
+      "number": "+94 72 466 6666",
+      "supports": ["whatsapp", "call"]
+    },
+    {
+      "label": "UAE",
+      "number": "+971 5247 31760",
+      "supports": ["whatsapp", "botim"]
+    }
+],
   "address": "Colombo, Sri Lanka",
   "organization": "SLConsulTech",
   "favicon": "/favicon.png",

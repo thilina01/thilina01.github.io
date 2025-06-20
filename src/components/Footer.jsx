@@ -25,12 +25,28 @@ export default function Footer() {
                 {site.email}
               </a>
             </li>
-            <li className="flex items-center gap-2">
-              <Phone size={16} />
-              <a href={`tel:${site.phone.replace(/ /g, "")}`} className="hover:text-blue-500">
-                {site.phone}
-              </a>
-            </li>
+{site.phones.map((p, idx) => (
+  <li key={idx} className="flex items-start gap-2 text-sm">
+    <Phone size={16} className="mt-0.5" />
+    <div>
+      <span className="font-medium">
+        {p.label}:{" "}
+        <a
+          href={`tel:${p.number.replace(/ /g, "")}`}
+          className="hover:text-blue-500"
+        >
+          {p.number}
+        </a>
+      </span>
+      <span className="ml-2 text-xs text-slate-500 dark:text-slate-400">
+        {p.supports.join(" / ")}
+      </span>
+    </div>
+  </li>
+))}
+
+
+
             <li className="flex items-start gap-2">
               <MapPin size={16} className="mt-1" />
               <address className="not-italic">
