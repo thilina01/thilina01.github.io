@@ -4,14 +4,17 @@ import site from "../data/site.json";
 
 export default function Footer() {
   return (
-<footer id="footer" className="mt-12 bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 px-4 md:px-16 lg:px-32 py-10 border-t border-slate-200 dark:border-slate-700">
+    <footer
+      id="footer"
+      className="mt-12 bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 px-4 md:px-16 lg:px-32 py-10 border-t border-slate-200 dark:border-slate-700"
+    >
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-
         {/* Branding */}
         <div>
           <h2 className="text-xl font-bold mb-2">{site.title}</h2>
           <p className="text-sm">
-            Building systems that think. Focused on AI, automation, and software craftsmanship.
+            Building systems that think. Focused on AI, automation, and software
+            craftsmanship.
           </p>
         </div>
 
@@ -25,33 +28,32 @@ export default function Footer() {
                 {site.email}
               </a>
             </li>
-{site.phones.map((p, idx) => (
-  <li key={idx} className="flex items-start gap-2 text-sm">
-    <Phone size={16} className="mt-0.5" />
-    <div>
-      <span className="font-medium">
-        {p.label}:{" "}
-        <a
-          href={`tel:${p.number.replace(/ /g, "")}`}
-          className="hover:text-blue-500"
-        >
-          {p.number}
-        </a>
-      </span>
-      <span className="ml-2 text-xs text-slate-500 dark:text-slate-400">
-        {p.supports.join(" / ")}
-      </span>
-    </div>
-  </li>
-))}
 
-
-
-            <li className="flex items-start gap-2">
-              <MapPin size={16} className="mt-1" />
-              <address className="not-italic">
-                {site.address}
-              </address>
+            {/* Locations */}
+            <li>
+              {/* <h4 className="text-xs uppercase font-semibold text-slate-500 dark:text-slate-400 mb-1 mt-4">Locations</h4> */}
+              <ul className="space-y-2">
+                {site.locations.map((loc, idx) => (
+                  <li key={idx} className="flex items-start gap-2 text-sm">
+                    <MapPin size={16} className="mt-0.5" />
+                    <div>
+                      <div className="font-medium">{loc.label}</div>
+                      <div>
+                        <Phone size={14} className="inline mr-1" />
+                        <a
+                          href={`tel:${loc.phone.replace(/ /g, "")}`}
+                          className="hover:text-blue-500"
+                        >
+                          {loc.phone}
+                        </a>
+                        <span className="ml-2 text-xs text-slate-500 dark:text-slate-400">
+                          {loc.supports.join(" / ")}
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </li>
           </ul>
         </div>
@@ -60,10 +62,18 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-2">Connect</h3>
           <div className="flex gap-4 mt-2">
-            <a href={site.social.github} target="_blank" rel="noopener noreferrer">
+            <a
+              href={site.social.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Github size={20} />
             </a>
-            <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer">
+            <a
+              href={site.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Linkedin size={20} />
             </a>
             <a href={`mailto:${site.email}`}>
