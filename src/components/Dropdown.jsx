@@ -1,5 +1,6 @@
 import React from "react";
 import { Moon, Sun } from "lucide-react";
+import site from "../data/site.json";
 
 export default function Dropdown({
   sections,
@@ -25,12 +26,12 @@ export default function Dropdown({
         </a>
       ))}
       <a
-        href="https://drive.google.com/uc?export=download&id=1Iti2Vx1BUcz67lIdQCLvz5449MkyOJLC"
+        href={site.cv.url}
         target="_blank"
         rel="noopener noreferrer"
         className="bg-blue-500 hover:bg-blue-600 text-blue-200 font-semibold py-2 px-4 rounded-full shadow-md transition animate-pulse w-fit"
       >
-        Hire Me
+        {site.cv.label}
       </a>
 
       <button

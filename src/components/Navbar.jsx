@@ -68,12 +68,12 @@ export default function Navbar({
 
           {/* HIRE ME CTA */}
           <a
-            href="https://drive.google.com/uc?export=download&id=1Iti2Vx1BUcz67lIdQCLvz5449MkyOJLC"
+            href={site.cv.url}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-500 hover:bg-blue-600 text-blue-200 font-semibold py-2 px-4 rounded-full shadow-md transition animate-pulse"
           >
-            Hire Me
+            {site.cv.label}
           </a>
 
           <button

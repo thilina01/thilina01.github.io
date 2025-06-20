@@ -26,5 +26,9 @@
   "structuredData": true,
   "deviconCSS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css",
   "canonical": true,
-  "copyright": "thilina01. All rights reserved."
+  "copyright": "thilina01. All rights reserved.",
+  "cv": {
+    "label": "Hire Me",
+    "url": "https://drive.google.com/uc?export=download&id=1Iti2Vx1BUcz67lIdQCLvz5449MkyOJLC"
+  }
 }
