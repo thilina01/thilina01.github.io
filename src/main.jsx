@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProjectStatusMonitor from "./pages/ProjectStatusMonitor";
 import ProjectFactoryPro from "./pages/ProjectFactoryPro";
+import ProjectTextBridge from "./pages/ProjectTextBridge";
 import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 
@@ -15,7 +16,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/status-monitor" element={<ProjectStatusMonitor />} />
-        + <Route path="/factorypro" element={<ProjectFactoryPro />} />
+        <Route path="/factorypro" element={<ProjectFactoryPro />} />
+        <Route path="/textbridge" element={<ProjectTextBridge />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

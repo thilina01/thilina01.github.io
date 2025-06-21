@@ -10,12 +10,13 @@
     "link": "/factorypro"
   },
   {
-    "title": "AI Review Pipeline",
-    "text": "Auto MR reviewer with OpenAI integration."
+    "title": "TextBridge SMS Gateway Suite",
+    "text": "Connect Your Android Device to Your Apps Embed SMS Messaging into Your Workflow",
+    "link": "/textbridge"
   },
   {
-    "title": "SMS Gateway",
-    "text": "Robust and secure SMS gateway solution with API support."
+    "title": "AI Review Pipeline",
+    "text": "Auto MR reviewer with OpenAI integration."
   },
   {
     "title": "Production Monitoring & KPI",

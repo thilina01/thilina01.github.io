@@ -1,0 +1,86 @@
+{
+  "title": "📲 TextBridge SMS Gateway Suite",
+  "subtitle": "Connect Your Android Device to Your Apps\nEmbed SMS Messaging into Your Workflow",
+  "description": "Turn any Android phone or tablet into your own enterprise SMS gateway. With TextBridge’s lightweight on-device HTTP API, you can send and track messages in real time—without extra servers or per-message fees.",
+  "features": [
+    {
+      "title": "Instant Integration",
+      "text": "Plug & play REST endpoints mean your dev team can be live in under an hour—no new infrastructure, no vendor lock-in."
+    },
+    {
+      "title": "Zero Gateway Fees",
+      "text": "Bypass expensive third-party gateways and eliminate per-message surcharges. Your only cost is your carrier’s SMS rate."
+    },
+    {
+      "title": "Rock-Solid Reliability",
+      "text": "Persistent foreground service, auto-restart on reboot, and delivery-receipt tracking ensure every message goes out and you know when it arrives."
+    },
+    {
+      "title": "Enterprise-Grade Security",
+      "text": "Bearer-token auth and IP-based rate limits keep your system safe from abuse and unauthorized use."
+    },
+    {
+      "title": "Real-Time Visibility",
+      "text": "Live dashboard updates (every 3 s) give you end-to-end transparency—see which numbers sent, which bounced, and drill down on any job."
+    },
+    {
+      "title": "Scalable by Design",
+      "text": "From a single shop-floor device to hundreds of nodes in Kubernetes—you choose the scale, TextBridge handles the rest."
+    },
+    {
+      "title": "Cost Savings & ROI",
+      "text": "Many customers recoup deployment costs in under two months by cutting gateway fees and support overhead."
+    }
+  ],
+  "benefits": [
+    {
+      "benefit": "Rapid Time-to-Market",
+      "impact": "2X faster rollout of SMS features compared to cloud-only solutions"
+    },
+    {
+      "benefit": "Lower TCO",
+      "impact": "100 % reduction in third-party gateway fees; self-host without servers"
+    },
+    {
+      "benefit": "Enhanced Customer Outreach",
+      "impact": "99 % delivery visibility boosts campaign performance"
+    },
+    {
+      "benefit": "Strong Compliance",
+      "impact": "Keep data on-premises for regulatory or privacy requirements"
+    },
+    {
+      "benefit": "Streamlined Operations",
+      "impact": "Fewer support tickets, no external API downtime worries"
+    },
+    {
+      "benefit": "Developer Delight",
+      "impact": "Simple JSON API with full example code—zero learning curve"
+    }
+  ],
+  "components": [
+    "NanoHTTPD Server",
+    "SmsServer Module",
+    "RateLimiter",
+    "Delivery Receipts",
+    "Persistence & Auto-Recovery",
+    "Status Dashboard"
+  ],
+  "testimonials": [
+    {
+      "quote": "With TextBridge, we shipped SMS alerts in our monitoring tool in under 45 minutes—and cut our messaging costs by 80 %.",
+      "author": "DevOps Lead, Fast-Growing SaaS"
+    },
+    {
+      "quote": "We no longer worry about vendor outages. TextBridge runs on our own hardware, giving us total control.",
+      "author": "CTO, Regulated Fintech"
+    }
+  ],
+  "download": {
+    "label": "Download the APK",
+    "url": "/assets/textbridge.apk"
+  },
+  "demoLink": "/schedule-call",
+  "scheduleCallText": "👉 Schedule Your Call",
+  "footerText": "TextBridge—bridge your apps and mobile messaging effortlessly, with total control and zero gateway fees."
+}
