@@ -15,6 +15,11 @@
     "link": "/textbridge"
   },
   {
+    "title": "WhizKidz Flashcards",
+    "text": "Empower young learners with a delightful, interactive experience designed to build confidence, spark curiosity, and turn vocabulary practice into an adventure.",
+    "link": "/whizkidz-flashcards"
+  },
+  {
     "title": "AI Review Pipeline",
     "text": "Auto MR reviewer with OpenAI integration."
   },
@@ -29,9 +34,5 @@
   {
     "title": "Document Workflow Monitor",
     "text": "Monitor internal document flow and process status across departments."
-  },
-  {
-    "title": "Flashcard Learning App",
-    "text": "A colorful and engaging flashcard app to help kids learn through play."
   }
 ]

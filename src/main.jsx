@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import ProjectStatusMonitor from "./pages/ProjectStatusMonitor";
 import ProjectFactoryPro from "./pages/ProjectFactoryPro";
 import ProjectTextBridge from "./pages/ProjectTextBridge";
+import ProjectWhizKidz from "./pages/ProjectWhizKidz";
 import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/status-monitor" element={<ProjectStatusMonitor />} />
         <Route path="/factorypro" element={<ProjectFactoryPro />} />
         <Route path="/textbridge" element={<ProjectTextBridge />} />
+        <Route path="/whizkidz-flashcards" element={<ProjectWhizKidz />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,0 +1,74 @@
+{
+    "title": "🎴 WhizKidz Flashcards",
+    "subtitle": "Interactive, offline-first flashcards with text-to-speech — anywhere, anytime.",
+    "hero": {
+        "heading": "Flip, Swipe & Speak Your Way to New Words",
+        "text": "Explore 14 thematic decks (Family, Animals, Foods, Colors, Shapes & more) or dive into a Random 20-card deck for surprise practice. Hear pronunciations on demand or automatically — no internet needed.",
+        "ctaText": "Download on Google Play",
+        "ctaLink": "https://play.google.com/store/apps/details?id=com.slconsultech.whizkidz_flashcards"
+    },
+    "screenshots": [
+        "/assets/whizkidz-flashcards/categories-1.png",
+        "/assets/whizkidz-flashcards/categories-2.png",
+        "/assets/whizkidz-flashcards/blue.png",
+        "/assets/whizkidz-flashcards/triangle.png",
+        "/assets/whizkidz-flashcards/fire-truck.png",
+        "/assets/whizkidz-flashcards/flamingo.png"
+    ],
+    "features": [
+        {
+            "icon": "📂",
+            "title": "14 Thematic Categories",
+            "text": "Family, Basic Needs, Animals, Foods, Colors, Shapes and more, each with high-quality illustrations."
+        },
+        {
+            "icon": "🎲",
+            "title": "Random Deck Generator",
+            "text": "Auto-generate a fresh 20-card deck for varied, repeatable practice."
+        },
+        {
+            "icon": "🔄",
+            "title": "Interactive Viewer",
+            "text": "Swipe to navigate cards, tap to flip and reveal words—intuitive gestures for little hands."
+        },
+        {
+            "icon": "🔊",
+            "title": "Pronunciation Support",
+            "text": "Manual & auto-play TTS (flutter_tts), with a simple toggle to enable/disable auto-speak."
+        }
+    ],
+    "outcomes": [
+        {
+            "goal": "Enhanced Recall",
+            "impact": "Multi-sensory learning boosts word retention & confidence."
+        },
+        {
+            "goal": "Flexible Practice",
+            "impact": "Fully offline—perfect for classrooms, travel, or at-home sessions."
+        }
+    ],
+    "modules": [
+        "Category Browser (14 decks + Random)",
+        "Random Deck Creator (20 cards)",
+        "Flashcard Viewer (flip & swipe)",
+        "TTS Controls & Auto-Speak Toggle",
+        "Asset-Driven Data Loader (JSON & bundled images)"
+    ],
+    "testimonials": [
+        {
+            "quote": "Since using WhizKidz, my daughter’s vocabulary grew by 30% in just two weeks! The random decks keep her excited to learn.",
+            "author": "Sarah M., Kindergarten Teacher"
+        },
+        {
+            "quote": "The TTS feature really clicks with young learners. We use it during circle time and it’s been a hit.",
+            "author": "Mr Lee, Elementary School Principal"
+        }
+    ],
+    "techSnapshot": {
+        "Framework": "Flutter & Dart",
+        "TTS Engine": "flutter_tts plugin",
+        "Data": "Local JSON via rootBundle & bundled image assets",
+        "State": "Stateful Widgets",
+        "Platforms": "Android & iOS"
+    }
+}
