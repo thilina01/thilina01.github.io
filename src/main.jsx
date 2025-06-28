@@ -7,6 +7,8 @@ import ProjectStatusMonitor from "./pages/ProjectStatusMonitor";
 import ProjectFactoryPro from "./pages/ProjectFactoryPro";
 import ProjectTextBridge from "./pages/ProjectTextBridge";
 import ProjectWhizKidz from "./pages/ProjectWhizKidz";
+import ProjectPrimeGen from "./pages/ProjectPrimeGen";
+
 import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 
@@ -20,6 +22,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/factorypro" element={<ProjectFactoryPro />} />
         <Route path="/textbridge" element={<ProjectTextBridge />} />
         <Route path="/whizkidz-flashcards" element={<ProjectWhizKidz />} />
+        <Route path="/prime-gen-vscode" element={<ProjectPrimeGen />} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
