@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 import site from "../data/site.json";
 
@@ -9,22 +10,29 @@ export default function Dropdown({
   darkMode,
   setDarkMode,
 }) {
+  const navigate = useNavigate();
+
+  const handleSectionClick = (section) => {
+    setMenuOpen(false);
+    navigate("/", { state: { scrollTo: section } });
+  };
+
   return (
     <div className="md:hidden fixed top-16 left-0 w-full z-40 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-md flex flex-col gap-4 px-6 py-4">
       {sections.map((section) => (
-        <a
+        <button
           key={section}
-          href={`#${section}`}
-          onClick={() => setMenuOpen(false)}
-          className={`${
+          onClick={() => handleSectionClick(section)}
+          className={`text-left ${
             activeSection === section
               ? "text-blue-500 font-semibold"
               : "hover:underline"
           }`}
         >
           {section.charAt(0).toUpperCase() + section.slice(1)}
-        </a>
+        </button>
       ))}
+
       <a
         href={site.cv.url}
         target="_blank"

@@ -1,6 +1,5 @@
-// src/pages/ProjectPrimeGen.jsx
-import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
+import React from "react";
+import PageLayout from "../layouts/PageLayout";
 import Footer from "../components/Footer";
 import ContactSection from "../sections/ContactSection";
 import ProjectPageLayout from "../components/ProjectPageLayout";
@@ -65,19 +64,11 @@ const data = {
 };
 
 export default function ProjectPrimeGen() {
-  const [darkMode, setDarkMode] = useState(() => localStorage.getItem("darkMode") === "true");
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-    localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
-
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-slate-100 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100">
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} menuOpen={false} setMenuOpen={() => {}} activeSection={""} />
+    <PageLayout>
       <ProjectPageLayout project={data} />
       <ContactSection />
       <Footer />
-    </main>
+    </PageLayout>
   );
 }

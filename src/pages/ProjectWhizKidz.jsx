@@ -1,30 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "../components/Navbar";
+import React from "react";
+import PageLayout from "../layouts/PageLayout";
+import Footer from "../components/Footer";
 import ContactSection from "../sections/ContactSection";
 import data from "../data/projects/whizkidz-flashcards.json";
-import Footer from "../components/Footer";
 
 export default function ProjectWhizKidz() {
-  const [darkMode, setDarkMode] = useState(
-    () => localStorage.getItem("darkMode") === "true"
-  );
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-    localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
-
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-      <Navbar
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-        menuOpen={menuOpen}
-        setMenuOpen={setMenuOpen}
-        activeSection=""
-      />
-
+    <PageLayout>
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-yellow-400 to-pink-500 text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
@@ -120,19 +102,6 @@ export default function ProjectWhizKidz() {
         </ul>
       </section>
 
-      {/* Testimonials */}
-      {/* <section className="py-16 bg-white dark:bg-gray-900 px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Testimonials</h2>
-        <div className="max-w-4xl mx-auto space-y-8">
-          {data.testimonials.map((t, i) => (
-            <blockquote key={i} className="italic text-center">
-              “{t.quote}”<br />
-              <span className="font-semibold">— {t.author}</span>
-            </blockquote>
-          ))}
-        </div>
-      </section> */}
-
       {/* Tech Snapshot */}
       <section className="py-16 bg-gray-100 dark:bg-gray-800 px-6">
         <h2 className="text-3xl font-bold text-center mb-8">Tech Snapshot</h2>
@@ -145,7 +114,9 @@ export default function ProjectWhizKidz() {
           ))}
         </div>
       </section>
+
+      <ContactSection />
       <Footer />
-    </div>
+    </PageLayout>
   );
 }

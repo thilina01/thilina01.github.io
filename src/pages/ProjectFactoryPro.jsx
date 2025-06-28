@@ -1,33 +1,13 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "../components/Navbar";
+import React from "react";
+import PageLayout from "../layouts/PageLayout";
 import ContactSection from "../sections/ContactSection";
-import data from "../data/projects/factorypro.json";
 import Footer from "../components/Footer";
+import ProjectPageLayout from "../components/ProjectPageLayout";
+import data from "../data/projects/factorypro.json";
 
 export default function ProjectFactoryPro() {
-  // Dark Mode state persisted in localStorage
-  const [darkMode, setDarkMode] = useState(
-    () => localStorage.getItem("darkMode") === "true"
-  );
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-    localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
-
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-      {/* Pass darkMode toggle to Navbar */}
-      <Navbar
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-        menuOpen={menuOpen}
-        setMenuOpen={setMenuOpen}
-        activeSection=""
-      />
-
-      {/* Hero Section */}
+    <PageLayout>
       <section className="relative bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
           {data.hero.heading}
@@ -35,12 +15,6 @@ export default function ProjectFactoryPro() {
         <p className="max-w-2xl mx-auto text-lg md:text-xl mb-8">
           {data.hero.text}
         </p>
-        {/* <a
-          href={data.hero.ctaLink}
-          className="inline-block bg-white text-blue-700 font-semibold py-3 px-6 rounded-lg shadow hover:shadow-lg transition"
-        >
-          {data.hero.ctaText}
-        </a> */}
         <p className="mt-4 italic opacity-80">{data.subtitle}</p>
       </section>
 
@@ -162,6 +136,6 @@ export default function ProjectFactoryPro() {
       </section>
 
       <Footer />
-    </div>
+    </PageLayout>
   );
 }
