@@ -207,8 +207,6 @@ export default function ProjectStatusMonitor() {
         </a>
         <p className="mt-6 italic opacity-90">{data.sourceAccess}</p>
       </section>
-
-      <ContactSection />
       <Footer />
     </PageLayout>
   );

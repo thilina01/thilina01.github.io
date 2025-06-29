@@ -114,8 +114,6 @@ export default function ProjectWhizKidz() {
           ))}
         </div>
       </section>
-
-      <ContactSection />
       <Footer />
     </PageLayout>
   );
