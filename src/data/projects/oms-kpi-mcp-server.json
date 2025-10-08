@@ -1,0 +1,97 @@
+{
+  "title": "🔧 OMS KPI MCP Server",
+  "description": "The **OMS KPI MCP Server** is a revolutionary AI-powered chat agent that provides real-time conversational access to Order Management System (OMS) Key Performance Indicators. This intelligent server acts as a sophisticated bridge between AI models and manufacturing data, enabling natural language queries, instant insights, and automated analysis through conversational interfaces. <br /> Built with Node.js and TypeScript, the server implements robust Model Context Protocol (MCP) standards to facilitate seamless communication with AI assistants, providing structured access to KPI data, intelligent trend analysis, and real-time manufacturing insights through intuitive chat interactions.",
+  "images": [
+    {
+      "src": "/assets/oms-kpi-mcp-server/architecture-diagram.png",
+      "alt": "OMS KPI MCP Server Architecture",
+      "caption": "High-level architecture showing MCP server integration with OMS systems"
+    },
+    {
+      "src": "/assets/oms-kpi-mcp-server/kpi-dashboard.png",
+      "alt": "KPI Dashboard Interface",
+      "caption": "Real-time KPI monitoring dashboard with AI insights"
+    },
+    {
+      "src": "/assets/oms-kpi-mcp-server/ai-analysis.png",
+      "alt": "AI-Powered Analysis",
+      "caption": "AI-generated insights and trend analysis for manufacturing KPIs"
+    },
+    {
+      "src": "/assets/oms-kpi-mcp-server/mcp-protocol.png",
+      "alt": "MCP Protocol Implementation",
+      "caption": "Model Context Protocol implementation for AI model integration"
+    }
+  ],
+  "download": {
+    "label": "View Documentation",
+    "url": "https://github.com/thilina01/oms-kpi-mcp-server"
+  },
+  "features": [
+    {
+      "title": "AI Chat Agent Interface",
+      "text": "Natural language conversations for real-time KPI queries and manufacturing insights"
+    },
+    {
+      "title": "Real-Time Data Access",
+      "text": "Instant conversational access to live OMS data with intelligent context understanding"
+    },
+    {
+      "title": "MCP Protocol Integration",
+      "text": "Seamless communication with AI models through standardized Model Context Protocol"
+    },
+    {
+      "title": "Intelligent Analysis Engine",
+      "text": "AI-powered trend detection, anomaly identification, and predictive insights through chat"
+    },
+    {
+      "title": "Multi-Source Data Integration",
+      "text": "Connect to various OMS systems and provide unified conversational access"
+    },
+    {
+      "title": "Automated Reporting & Alerts",
+      "text": "Proactive notifications and scheduled reports delivered through chat interfaces"
+    }
+  ],
+  "techStack": [
+    { "layer": "Runtime", "tech": "Node.js 22" },
+    { "layer": "Language", "tech": "TypeScript" },
+    { "layer": "Framework", "tech": "Express.js" },
+    { "layer": "Database", "tech": "MySQL2" },
+    { "layer": "MCP Protocol", "tech": "@modelcontextprotocol/sdk" },
+    { "layer": "AI Integration", "tech": "OpenAI API" },
+    { "layer": "Validation", "tech": "Zod" },
+    { "layer": "NLP", "tech": "Natural.js, Compromise" },
+    { "layer": "Charts", "tech": "Chart.js" },
+    { "layer": "Deployment", "tech": "Docker" }
+  ],
+  "architecture": [
+    "`src/index.ts`: Main MCP server entry point with tool handlers",
+    "`src/http-server.ts`: HTTP server for web integration and AI chat",
+    "`src/tools.ts`: MCP tool definitions for 9 OMS entities",
+    "`src/schemas/`: Zod validation schemas for each entity type",
+    "`src/queries/`: SQL query builders for MySQL database",
+    "`src/services/databaseService.ts`: MySQL connection and query execution",
+    "`dist/`: Compiled JavaScript output from TypeScript",
+    "`Dockerfile`: Multi-stage Docker build for production deployment"
+  ],
+  "cicd": [
+    "`Dockerfile`: Multi-stage Docker build with Node.js 22",
+    "`package.json`: npm scripts for build, start, and development",
+    "`tsconfig.json`: TypeScript configuration for compilation",
+    "`env.example`: Environment variables template",
+    "`test-mcp-server.sh`: Test script for MCP server validation"
+  ],
+  "takeaways": [
+    "Implemented Model Context Protocol server with 9 specialized tools for OMS entities",
+    "Built MySQL integration with comprehensive query builders for Customer, Invoice, Item, Job, Operation, Production, Sales Order, and Supplier data",
+    "Created AI chat interface with OpenAI API integration for natural language queries",
+    "Developed Zod validation schemas ensuring type-safe data handling",
+    "Implemented Natural.js and Compromise for advanced NLP processing",
+    "Built Chart.js integration for data visualization and KPI reporting",
+    "Designed multi-stage Docker deployment with Node.js 22 runtime",
+    "Created comprehensive SQL query builders with filtering and relationship handling"
+  ],
+  "sourceAccess": "Contact for live demo and technical consultation.",
+  "developer": "Developed by thilina01 — 📧 thilina01@apache.org | 🌐 www.thilina01.com"
+}
